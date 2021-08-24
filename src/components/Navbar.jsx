@@ -8,7 +8,7 @@ export default function Navbar() {
             <nav className="navbar navbar-expand-md fixed-top">
                 <div className="container">
                     <a className="navbar-brand mt-2 mt-lg-0">
-                        <img className="logo" src="/images/logo-filled.png"></img>
+                        <img className="logo" src={process.env.PUBLIC_URL + '/images/logo-filled.png'}></img>
                         <h1 className="logo-name">Gokul</h1>
                     </a>
                     <button className="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-lable="Toggle navigation">
@@ -29,7 +29,7 @@ export default function Navbar() {
                                 <a className="nav-link" href="#">CONTACT</a>
                             </li>
                             <li className="nav-item ml-auto mx-lg-3">
-                                <a className="nav-link resume p-2" href="/pdf/resume.pdf" download>DOWNLOAD RESUME</a>
+                                <a className="nav-link resume p-2" href={process.env.PUBLIC_URL + '/pdf/resume.pdf'} download>DOWNLOAD RESUME</a>
                             </li>
                         </ul>
                     </div>
