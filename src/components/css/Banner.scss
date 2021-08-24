@@ -1,0 +1,158 @@
+*{
+    text-align: center;
+
+    a{
+        text-decoration: none;
+    }
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/bg3.png') no-repeat 50%/cover;
+
+    h1,p{
+        color: #fff;
+    }
+
+    .banner-content{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .social-links{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        a{
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin: auto;
+            display: flex;
+            color: #fff;
+        }
+
+        .github{
+            background-color: #fff;
+            color: #24292e;
+        }
+
+        .github:hover{
+            background-color: #24292e;
+            color: #fff;
+            transition: all .5s;
+        }
+
+        .linkedin{
+            background-color: #0077b5;
+        }
+
+        .linkedin:hover{
+            color: #0077b5;
+            background: #fff;
+            transition: all .5s;
+        }
+
+        .instagram{
+            background: linear-gradient(45deg,#f09433,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888);
+        }
+
+        .instagram:hover{
+            background: linear-gradient(45deg,#fff,#fff);
+            color: #f09433;
+            transition: all .5s;
+        }
+
+        .facebook{
+            background: #4267b2;
+        }
+
+        .facebook:hover{
+            background: #fff;
+            color: #4267b2;
+            transition: all .5s;
+        }
+
+        .twitter{
+            background: #1da1f2;
+        }
+
+        .twitter:hover{
+            color: #1da1f2;
+            background: #fff;
+            transition: all .5s;
+        }
+
+        .codepen{
+            background: #fff;
+            color: #000;
+        }
+
+        .codepen:hover{
+            color: #fff;
+            background: #000;
+            transition: all .5s;
+        }
+
+        .hackerrank{
+            background: #1ba94c;
+        }
+
+        .hackerrank:hover{
+            color: #1ba94c;
+            background: #fff;
+            transition: all .5s;
+        }
+    }
+
+    .banner-buttons{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 30px 0 0;
+
+        .project-button,.hire-button{
+            margin: 20px 0;
+            border-radius: 5px;
+            font-size: 15px;
+            padding: 10px 20px;
+            letter-spacing: .5px;
+            width: 175px;
+        }
+
+        .project-button{
+            background: linear-gradient(45deg,#f8501c,#ffab1d);
+            color: #fff;
+        }
+
+        .hire-button{
+            background: linear-gradient(45deg,#0004fc,#c300ff);
+            color: #fff;
+        }
+
+        .project-button:hover{
+            background: linear-gradient(45deg,#c13dff,#f573c3);
+            color: #000;
+            transition: all .5s;
+        }
+
+        .hire-button:hover{
+            background: linear-gradient(45deg,#ee1e5d,#e644f5);
+            color: #000;
+            transition: all .5s;
+        }
+    }
+}

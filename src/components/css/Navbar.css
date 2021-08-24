@@ -1,0 +1,71 @@
+nav{
+    background-color: #000;
+}
+nav .navbar-brand{
+    display: flex;
+}
+
+nav .navbar-brand h1{
+    font-size: 25px;
+    color: white;
+    margin-left: 7px;
+    margin-bottom: 0;
+}
+
+nav .navbar-brand .logo{
+    width: 30px;
+    height: 30px;
+}
+
+i{
+    color: white;
+}
+
+nav .nav-item{
+    margin: 5px 20px 5px auto!important;
+}
+
+nav .nav-link{
+    color: #d9d9d9;
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+}
+
+nav .project{
+    color: wheat;
+    background: linear-gradient(90deg,#0ef,#ff00ea,#fffb00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav .project:hover{
+    background: linear-gradient(90deg,#fffb00,#ff00ea,#0ef);
+    color: wheat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav .resume{
+    background: linear-gradient(45deg,#0004fc,#c300ff);
+    color: #ffffff;
+    border-radius: 5px;
+    border-bottom: none;
+}
+
+nav a.resume:hover{
+    border-bottom: none;
+    background: linear-gradient(45deg,#f8501c,#ffab1d);
+    color: #000;
+    transition: all .5s;
+}
+
+nav .nav-link:hover{
+    color: #ffffff;
+    border-bottom: 3px solid #8601fe;
+}
+
+.navbar-left-auto{
+    text-align: end;
+    margin-left: auto;
+}
