@@ -1,0 +1,163 @@
+.about {
+  margin: 10px 0;
+}
+
+.about .section-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 0 50px;
+}
+
+.about .project-h1 {
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(#0ef), color-stop(#ff00ea), to(#fffb00));
+  background: linear-gradient(90deg, #0ef, #ff00ea, #fffb00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about .project-h1 hr {
+  height: 5px;
+  background: linear-gradient(45deg, #0004fc, #c300ff);
+}
+
+.about .project-h1:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#fffb00), color-stop(#ff00ea), to(#0ef));
+  background: linear-gradient(90deg, #fffb00, #ff00ea, #0ef);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about .left-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: #000;
+  margin: auto;
+}
+
+.about .left-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  cursor: pointer;
+}
+
+.about .left-image::before {
+  border-radius: 50%;
+  background: linear-gradient(195deg, #e100ff, #0ef, #3700ff);
+  position: absolute;
+  content: "";
+  top: -4px;
+  bottom: -4px;
+  left: -4px;
+  right: -4px;
+  z-index: -1;
+}
+
+.about .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .about-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+}
+
+.about .about-right h1 {
+  background: -webkit-gradient(linear, left top, right top, from(#0ef), color-stop(#ff00ea), to(#fffb00));
+  background: linear-gradient(90deg, #0ef, #ff00ea, #fffb00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about .about-right h3 {
+  margin: 5px 0;
+}
+
+.about .about-right p {
+  line-height: 32px;
+  text-align: justify;
+  font-size: 18px;
+  font-family: "Mulish",sans-serif;
+  margin: 10px 0;
+}
+
+.about .about-right .download-resume {
+  color: #fff;
+  background: linear-gradient(45deg, #000, #000);
+  margin: 25px 0;
+  padding: .5em 2em;
+  position: relative;
+}
+
+.about .about-right .download-resume::before {
+  position: absolute;
+  content: "";
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  z-index: -1;
+  background: linear-gradient(195deg, #e100ff, #060c21, #3700ff);
+}
+
+.about .about-right .download-resume::after {
+  position: absolute;
+  content: "";
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  z-index: -2;
+  background: linear-gradient(195deg, #e100ff, #060c21, #3700ff);
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+
+@media (max-width: 576px) {
+  .left-image {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  .about-right {
+    padding: 10px 0;
+  }
+}
+/*# sourceMappingURL=About.css.map */

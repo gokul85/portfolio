@@ -1,0 +1,140 @@
+.about{
+    margin: 10px 0;
+
+    .section-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0 50px;
+    }
+
+    .project-h1{
+        color: #fff;
+        background: linear-gradient(90deg,#0ef,#ff00ea,#fffb00);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        hr{
+            height: 5px;
+            background: linear-gradient(45deg,#0004fc,#c300ff);
+        }
+    }
+
+    .project-h1:hover{
+        background: linear-gradient(90deg,#fffb00,#ff00ea,#0ef);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .left-image{
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        background: #000;
+        margin: auto;
+
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: fill;
+            cursor: pointer;
+        }
+    }
+
+    .left-image::before{
+        border-radius: 50%;
+        background: linear-gradient(195deg,#e100ff,#0ef,#3700ff);
+        position: absolute;
+        content: "";
+        top: -4px;
+        bottom: -4px;
+        left: -4px;
+        right: -4px;
+        z-index: -1;
+    }
+
+    .row{
+        align-items: center;
+    }
+
+    .about-right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #fff;
+
+
+        h1{
+            background: linear-gradient(90deg,#0ef,#ff00ea,#fffb00);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h3{
+            margin: 5px 0;
+        }
+
+        p{
+            line-height: 32px;
+            text-align: justify;
+            font-size: 18px;
+            font-family: "Mulish",sans-serif;
+            margin: 10px 0;
+        }
+
+        .download-resume{
+            color: #fff;
+            background: linear-gradient(45deg,#000,#000);
+            margin: 25px 0;
+            padding: .5em 2em;
+            position: relative;
+        }
+
+        .download-resume::before{
+            position: absolute;
+            content: "";
+            top: -2px;
+            bottom: -2px;
+            left: -2px;
+            right: -2px;
+            z-index: -1;
+            background: linear-gradient(195deg,#e100ff,#060c21,#3700ff);
+        }
+
+        .download-resume::after{
+            position: absolute;
+            content: "";
+            top: -5px;
+            bottom: -5px;
+            left: -5px;
+            right: -5px;
+            z-index: -2;
+            background: linear-gradient(195deg,#e100ff,#060c21,#3700ff);
+            -webkit-filter: blur(5px);
+            filter: blur(5px);
+        }
+
+    }
+
+
+}
+
+@media (max-width: 576px){
+    .left-image{
+        width: 250px!important;
+        height: 250px!important;
+    }
+
+    .about-right{
+        padding: 10px 0;
+    }
+}

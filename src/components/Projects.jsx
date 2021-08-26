@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './css/Projects.scss';
+import './css/Projects.css';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -123,6 +123,7 @@ export class Projects extends Component {
                     <div className="section-title">
                         <h1 className="project-h1">
                             PROJECTS
+                            <hr />
                         </h1>
                     </div>
                 </div>
