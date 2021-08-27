@@ -39,7 +39,7 @@ export class Projects extends Component {
         slides: [
             {
                 id: 1,
-                title: "Tic Tac Toa",
+                title: "Tic Tac Toe",
                 discription: "It is a tic tac toe game with the best ui and ux",
                 languages: [
                     "html.svg",
@@ -127,15 +127,15 @@ export class Projects extends Component {
                         </h1>
                     </div>
                 </div>
-                <Swiper cssMode={true} navigation={true} pagination={{ clickable: true }} mousewheel={true} keyboard={true} className="mySwiper">
+                <Swiper cssMode={false} navigation={true} pagination={{ clickable: true }} mousewheel={false} keyboard={true} className="mySwiper">
                     {slidecontens}
                     <SwiperSlide>
                         <div className="container">
                             <div className="row">
-                                <div className="col-12">
+                                <div className="col-12 p-1">
                                     <div className="comming-soon">
                                         <div className="middle">
-                                            <h1>COMMING SOON</h1>
+                                            <h1>COMING SOON</h1>
                                             <hr />
                                             <p id="time"></p>
                                         </div>
