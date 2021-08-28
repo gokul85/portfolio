@@ -107,6 +107,14 @@
   -webkit-text-fill-color: transparent;
 }
 
+.about .about-right h1:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#fffb00), color-stop(#ff00ea), to(#0ef));
+  background: linear-gradient(90deg, #fffb00, #ff00ea, #0ef);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .about .about-right h3 {
   margin: 5px 0;
 }
@@ -136,6 +144,14 @@
   right: -2px;
   z-index: -1;
   background: linear-gradient(195deg, #e100ff, #060c21, #3700ff);
+}
+
+.about .about-right .download-resume:hover::before {
+  background: linear-gradient(195deg, #3700ff, #060c21, #e100ff);
+}
+
+.about .about-right .download-resume:hover::after {
+  background: linear-gradient(195deg, #3700ff, #060c21, #e100ff);
 }
 
 .about .about-right .download-resume::after {

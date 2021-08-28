@@ -42,9 +42,9 @@ export class Projects extends Component {
                 title: "Tic Tac Toe",
                 discription: "It is a tic tac toe game with the best ui and ux",
                 languages: [
-                    "html.svg",
-                    "css.svg",
-                    "javascript.svg",
+                    "HTML",
+                    "CSS",
+                    "javascript",
                 ],
                 link1: "https://github.com/gokul85/XO-game",
                 link2: "https://github.com/gokul85/XO-game/archive/refs/heads/main.zip",
@@ -56,8 +56,8 @@ export class Projects extends Component {
                 title: "UI to Web Page",
                 discription: "It is my first web development project",
                 languages: [
-                    "html.svg",
-                    "css.svg",
+                    "HTML",
+                    "CSS",
                 ],
                 link1: "https://github.com/gokul85/first-web-page",
                 link2: "https://github.com/gokul85/first-web-page/archive/refs/heads/main.zip",
@@ -154,8 +154,7 @@ class Slide extends React.Component {
     render() {
 
         const langus = this.props.languages.map((lan) => (
-            // <img src={process.env.PUBLIC_URL + `/images/${lan}`} alt="" />
-            <object id="svg-object" data={process.env.PUBLIC_URL + `/images/${lan}`} type="image/svg+xml"></object>
+            <object id="svg-object" data={process.env.PUBLIC_URL + `/images/${lan}.svg`} type="image/svg+xml"></object>
         ));
         return (
             <div className="container">

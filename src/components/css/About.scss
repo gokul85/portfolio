@@ -79,6 +79,13 @@
             -webkit-text-fill-color: transparent;
         }
 
+        h1:hover{
+            background: linear-gradient(90deg,#fffb00,#ff00ea,#0ef);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
         h3{
             margin: 5px 0;
         }
@@ -108,6 +115,14 @@
             right: -2px;
             z-index: -1;
             background: linear-gradient(195deg,#e100ff,#060c21,#3700ff);
+        }
+
+        .download-resume:hover::before{
+            background: linear-gradient(195deg,#3700ff,#060c21,#e100ff);
+        }
+
+        .download-resume:hover::after{
+            background: linear-gradient(195deg,#3700ff,#060c21,#e100ff);
         }
 
         .download-resume::after{
