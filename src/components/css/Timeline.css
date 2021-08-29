@@ -113,6 +113,19 @@
           transform: translateY(-50%);
 }
 
+.main-timeline .timeline-content:after {
+  position: absolute;
+  content: "";
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  z-index: -2;
+  background: linear-gradient(195deg, #e100ff, #060c21, #3700ff);
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+
 .main-timeline .title {
   font-size: 20px;
   letter-spacing: 0.5px;

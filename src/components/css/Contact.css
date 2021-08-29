@@ -1,0 +1,232 @@
+.contact-left {
+  position: relative;
+  font-family: "Mulish",sans-serif;
+  color: #fff;
+  background: #000;
+  border-top-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.contact-left::before {
+  background: linear-gradient(195deg, #e100ff, #0ef, #3700ff);
+  border-bottom-right-radius: 5%;
+  border-top-left-radius: 5%;
+  position: absolute;
+  content: "";
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  z-index: -1;
+}
+
+.contact-left::after {
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: linear-gradient(195deg, #e100ff, #0ef, #3700ff);
+  border-bottom-right-radius: 5%;
+  border-top-left-radius: 5%;
+  position: absolute;
+  content: "";
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  z-index: -1;
+}
+
+.contact-left:hover::after {
+  -webkit-filter: blur(200px);
+          filter: blur(200px);
+}
+
+.contact-left .contact-left-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 15px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100%;
+}
+
+.contact-left .contact-left-inner .contact-links {
+  margin: 10px 0;
+}
+
+.contact-left .contact-left-inner .contact-links h2 {
+  background: -webkit-gradient(linear, left top, right top, from(#0ef), color-stop(#ff00ea), to(#fffb00));
+  background: linear-gradient(90deg, #0ef, #ff00ea, #fffb00);
+  font-family: "Oswald",sans-serif;
+  color: #fff;
+  letter-spacing: .5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-left .contact-left-inner .contact-links .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 0;
+}
+
+.contact-left .contact-left-inner .contact-links .social-links a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin: 10px 15px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+}
+
+.contact-left .contact-left-inner .contact-links .social-links .github {
+  background-color: #fff;
+  color: #24292e;
+}
+
+.contact-left .contact-left-inner .contact-links .social-links .github:hover {
+  background-color: #24292e;
+  color: #fff;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.contact-left .contact-left-inner .contact-links .social-links .linkedin {
+  background-color: #0077b5;
+  margin-left: 0;
+}
+
+.contact-left .contact-left-inner .contact-links .social-links .linkedin:hover {
+  color: #0077b5;
+  background: #fff;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.contact-left .contact-left-inner .contact-links .social-links .instagram {
+  background: linear-gradient(45deg, #f09433, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888);
+}
+
+.contact-left .contact-left-inner .contact-links .social-links .instagram:hover {
+  background: linear-gradient(45deg, #fff, #fff);
+  color: #f09433;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.contact-left .contact-left-inner .contact-links .social-links .facebook {
+  background: #4267b2;
+}
+
+.contact-left .contact-left-inner .contact-links .social-links .facebook:hover {
+  background: #fff;
+  color: #4267b2;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.contact-left .contact-left-inner .contact-links .social-links .twitter {
+  background: #1da1f2;
+}
+
+.contact-left .contact-left-inner .contact-links .social-links .twitter:hover {
+  color: #1da1f2;
+  background: #fff;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.contact-left .contact-left-inner .contact-links .social-links .codepen {
+  background: #fff;
+  color: #000;
+}
+
+.contact-left .contact-left-inner .contact-links .social-links .codepen:hover {
+  color: #fff;
+  background: #000;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.contact-left .contact-left-inner .contact-links .social-links .hackerrank {
+  background: #1ba94c;
+}
+
+.contact-left .contact-left-inner .contact-links .social-links .hackerrank:hover {
+  color: #1ba94c;
+  background: #fff;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.contact-left .contact-left-inner .home, .contact-left .contact-left-inner .mail, .contact-left .contact-left-inner .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 20px 0;
+}
+
+.contact-left .contact-left-inner .home .icon, .contact-left .contact-left-inner .mail .icon, .contact-left .contact-left-inner .phone .icon {
+  font-size: 1.8rem;
+  margin-right: 15px;
+}
+
+.contact-left .contact-left-inner .home h4, .contact-left .contact-left-inner .mail h4, .contact-left .contact-left-inner .phone h4 {
+  background: -webkit-gradient(linear, left top, right top, from(#0ef), color-stop(#ff00ea), to(#fffb00));
+  background: linear-gradient(90deg, #0ef, #ff00ea, #fffb00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-left .contact-left-inner .mail a, .contact-left .contact-left-inner .phone a {
+  color: #fff !important;
+}
+
+.contact-left .contact-left-inner .mail .icon {
+  color: red;
+}
+/*# sourceMappingURL=Contact.css.map */
