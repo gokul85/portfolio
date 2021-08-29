@@ -4,6 +4,7 @@ import Banner from './components/Banner';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
+import Timeline from './components/Timeline';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Projects />
         <About />
         <Skills />
+        <Timeline />
       </div>
     </div>
   );

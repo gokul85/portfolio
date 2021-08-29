@@ -118,7 +118,7 @@ export class Projects extends Component {
         ));
 
         return (
-            <section className="project">
+            <section className="project" id="project">
                 <div className="container">
                     <div className="section-title">
                         <h1 className="project-h1">
@@ -181,7 +181,7 @@ class Slide extends React.Component {
                                     </a>
                                 </div>
                             </div>
-                            <img className="project-image" src={this.props.imageLink} />
+                            <img className="project-image" src={this.props.imageLink} alt="Project image" />
                         </div>
                     </div>
                 </div>

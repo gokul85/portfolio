@@ -53,7 +53,7 @@ export class Skills extends Component {
             />
         ));
         return (
-            <section className="skills">
+            <section className="skills" id="skills">
                 <div className="section-title">
                     <h1 className="project-h1">
                         SKILLS
