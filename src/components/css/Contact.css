@@ -1,3 +1,7 @@
+.contact {
+  padding: 30px 0 150px;
+}
+
 .contact-left {
   position: relative;
   font-family: "Mulish",sans-serif;
@@ -78,6 +82,14 @@
   font-family: "Oswald",sans-serif;
   color: #fff;
   letter-spacing: .5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-left .contact-left-inner .contact-links h2:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#fffb00), color-stop(#ff00ea), to(#0ef));
+  background: linear-gradient(90deg, #fffb00, #ff00ea, #0ef);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -222,11 +234,139 @@
   -webkit-text-fill-color: transparent;
 }
 
+.contact-left .contact-left-inner .home h4:hover, .contact-left .contact-left-inner .mail h4:hover, .contact-left .contact-left-inner .phone h4:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#fffb00), color-stop(#ff00ea), to(#0ef));
+  background: linear-gradient(90deg, #fffb00, #ff00ea, #0ef);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .contact-left .contact-left-inner .mail a, .contact-left .contact-left-inner .phone a {
   color: #fff !important;
 }
 
 .contact-left .contact-left-inner .mail .icon {
   color: red;
+}
+
+.contact-right {
+  position: relative;
+  font-family: "Mulish",sans-serif;
+  color: #fff;
+  background: #000;
+  border-top-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 0;
+}
+
+.contact-right::before {
+  background: linear-gradient(195deg, #e100ff, #0ef, #3700ff);
+  border-bottom-right-radius: 5%;
+  border-top-left-radius: 5%;
+  position: absolute;
+  content: "";
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  z-index: -1;
+}
+
+.contact-right::after {
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: linear-gradient(195deg, #e100ff, #0ef, #3700ff);
+  border-bottom-right-radius: 5%;
+  border-top-left-radius: 5%;
+  position: absolute;
+  content: "";
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  z-index: -1;
+}
+
+.contact-right:hover::after {
+  -webkit-filter: blur(200px);
+          filter: blur(200px);
+}
+
+.contact-right h2 {
+  background: -webkit-gradient(linear, left top, right top, from(#0ef), color-stop(#ff00ea), to(#fffb00));
+  background: linear-gradient(90deg, #0ef, #ff00ea, #fffb00);
+  font-family: "Oswald",sans-serif;
+  color: #fff;
+  letter-spacing: .5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-right h2:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#fffb00), color-stop(#ff00ea), to(#0ef));
+  background: linear-gradient(90deg, #fffb00, #ff00ea, #0ef);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-right form {
+  padding: 15px 0;
+}
+
+.contact-right form .form_control {
+  margin-bottom: 5px;
+}
+
+.contact-right form .form_control input, .contact-right form .form_control textarea {
+  border: 1px solid #d2d2d6;
+  font-size: 1em;
+  color: #fff;
+  padding: .5em 1em;
+  min-width: 100%;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: 0;
+  margin: 5px 0 15px;
+}
+
+.contact-right form .warning {
+  color: red !important;
+}
+
+.contact-right form .submit-button {
+  display: block;
+  border: 0;
+  width: 100%;
+  outline: none;
+  padding: .4em 1em;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Oswald",sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(45deg, #0004fc, #c300ff);
+}
+
+.contact-right form .submit-button .icon {
+  margin: -5px 0 0 5px;
+  font-size: 1.4rem;
 }
 /*# sourceMappingURL=Contact.css.map */

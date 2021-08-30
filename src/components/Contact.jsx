@@ -1,7 +1,20 @@
 import React from 'react';
-import './css/Contact.css'
+import './css/Contact.css';
+import emailjs from 'emailjs-com';
 
 export default function Contact() {
+
+    function sendEmail(e) {
+        e.preventDefault();
+
+        emailjs.sendForm('service_50jt0vp', 'template_7idxd6e', e.target, 'user_anzq7ulUSjaVNgb1KUJlM')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        e.target.reset()
+    }
     return (
         <section className="contact" id="contact">
             <div className="section-title">
@@ -65,7 +78,47 @@ export default function Contact() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12"></div>
+                    <div className="col-lg-6 col-md-12 col-sm-12">
+                        <div className="contact-right">
+                            <h2>CONTACT ME</h2>
+                            <form autoComplete="false" id="c_form" onSubmit={sendEmail}>
+                                <div className="form_control">
+                                    <label htmlFor="name">
+                                        Full Name
+                                        <span className="warning">*</span>
+                                    </label>
+                                    <input type="text" name="name" id="name" />
+                                </div>
+                                <div className="form_control">
+                                    <label htmlFor="email">
+                                        Email
+                                        <span className="warning">*</span>
+                                    </label>
+                                    <input type="email" name="email" id="email" />
+                                </div>
+                                <div className="form_control">
+                                    <label htmlFor="phone">
+                                        Phone Number
+                                        <span className="warning">*</span>
+                                    </label>
+                                    <input type="tel" name="phone" id="phone" />
+                                </div>
+                                <div className="form_control">
+                                    <label htmlFor="message">
+                                        Message
+                                        <span className="warning">*</span>
+                                    </label>
+                                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                                </div>
+                                <button type="submit" className="submit-button">
+                                    <span>
+                                        Send
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M48 270.9l118.9 44.6L181.7 464 256 360l104 104L464 48 48 270.9zm294.9 126L260 313.4 374.9 152 193.6 289.8 124.9 265l291-156.2-73 288.1z"></path></svg>
+                                    </span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
