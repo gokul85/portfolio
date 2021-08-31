@@ -87,28 +87,28 @@ export default function Contact() {
                                         Full Name
                                         <span className="warning">*</span>
                                     </label>
-                                    <input type="text" name="name" id="name" />
+                                    <input type="text" name="name" id="name" required />
                                 </div>
                                 <div className="form_control">
                                     <label htmlFor="email">
                                         Email
                                         <span className="warning">*</span>
                                     </label>
-                                    <input type="email" name="email" id="email" />
+                                    <input type="email" name="email" id="email" required />
                                 </div>
                                 <div className="form_control">
                                     <label htmlFor="phone">
                                         Phone Number
                                         <span className="warning">*</span>
                                     </label>
-                                    <input type="tel" name="phone" id="phone" />
+                                    <input type="tel" name="phone" id="phone" required />
                                 </div>
                                 <div className="form_control">
                                     <label htmlFor="message">
                                         Message
                                         <span className="warning">*</span>
                                     </label>
-                                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
                                 </div>
                                 <button type="submit" className="submit-button">
                                     <span>
