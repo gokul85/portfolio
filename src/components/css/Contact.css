@@ -328,6 +328,7 @@
 
 .contact-right form {
   padding: 15px 0;
+  max-width: 350px;
 }
 
 .contact-right form .form_control {

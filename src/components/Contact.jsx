@@ -79,7 +79,7 @@ export default function Contact() {
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12">
-                        <div className="contact-right">
+                        <div className="contact-right" id="contact-me">
                             <h2>CONTACT ME</h2>
                             <form autoComplete="false" id="c_form" onSubmit={sendEmail}>
                                 <div className="form_control">

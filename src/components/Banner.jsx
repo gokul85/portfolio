@@ -35,7 +35,7 @@ export default function Banner() {
                             </div>
                             <div className="banner-buttons">
                                 <a href="#project" className="link project-button mx-2">EXPLORE PROJECTS</a>
-                                <a href="#" className="link hire-button mx-2">HIRE ME</a>
+                                <a href="#contact-me" className="link hire-button mx-2">CONTACT ME</a>
                             </div>
                         </div>
                     </div>

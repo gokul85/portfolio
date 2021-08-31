@@ -26,7 +26,7 @@ export default function Navbar() {
                                 <a className="nav-link" href="#skills">SKILLS</a>
                             </li>
                             <li className="nav-item ml-auto mx-lg-3">
-                                <a className="nav-link" href="#">CONTACT</a>
+                                <a className="nav-link" href="#contact">CONTACT</a>
                             </li>
                             <li className="nav-item ml-auto mx-lg-3">
                                 <a className="nav-link resume p-2" href={process.env.PUBLIC_URL + '/pdf/resume.pdf'} download>DOWNLOAD RESUME</a>
