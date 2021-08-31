@@ -16,7 +16,7 @@ export class Timeline extends Component {
             {
                 id: 2,
                 svg: "school2",
-                title: "HSS",
+                title: "HSC",
                 sub: "Computer Science - Maths",
                 place: "Chellammal Matriculation Higher Secondary School, Tiruchirappalli",
                 timeperiod: "Jun 2018 - Mar 2020",
