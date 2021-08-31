@@ -21,7 +21,7 @@ export default function About() {
                         <div className="about-right">
                             <h1>Hi, I'am Gokul</h1>
                             <h3>Web Designer & Web Developer</h3>
-                            <p>I am hailing from tiruchirappalli and Currently a student of stream Computer Science at SNS College of Engineering. I'm Open to getting any work or Jobs related to software field as an intern at Your Company. I love to code Everyday.</p>
+                            <p>I am hailing from Tiruchirapalli and pursuing my Bachelor of engineering in Computer Science at SNS College of Engineering, Coimbatore. I'm Open to part-time and intern opportunities related to my domain at your organization.</p>
                             <a className="download-resume" href={process.env.PUBLIC_URL + '/pdf/resume.pdf'} download>Download Resume</a>
                         </div>
                     </div>
