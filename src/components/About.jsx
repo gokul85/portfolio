@@ -12,12 +12,12 @@ export default function About() {
                     </h1>
                 </div>
                 <div className="row">
-                    <div className="col-lg-5">
+                    <div className="col-lg-4">
                         <div className="left-image">
                             <img src="https://res.cloudinary.com/dm7i7i9wg/image/upload/v1629999440/Projects/image_xmxzlc.jpg" alt="" />
                         </div>
                     </div>
-                    <div className="col-lg-7">
+                    <div className="col-lg-8">
                         <div className="about-right">
                             <h1>Hi, I'am Gokul</h1>
                             <h3>Web Designer & Web Developer</h3>
